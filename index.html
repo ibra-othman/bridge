@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BRIDGE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i>
+  <div class="gridbg"></div>
+  <div class="shapes">
+    <svg class="sh pls" viewBox="0 0 40 40" style="--x:6%;--y:18%;--s:56px;--d:16s;--dl:-2s;--c:var(--ac)"><circle cx="20" cy="20" r="16"/></svg>
+    <svg class="sh " viewBox="0 0 40 40" style="--x:88%;--y:12%;--s:48px;--d:19s;--dl:-5s;--c:var(--ac2)"><path d="M20 5 36 33H4z"/></svg>
+    <svg class="sh spin" viewBox="0 0 40 40" style="--x:74%;--y:46%;--s:40px;--d:14s;--dl:-1s;--c:var(--ac)"><path d="M20 6v28M6 20h28"/></svg>
+    <svg class="sh spin" viewBox="0 0 40 40" style="--x:12%;--y:58%;--s:62px;--d:22s;--dl:-8s;--c:var(--ac2)"><path d="M20 4l14 8v16l-14 8-14-8V12z"/></svg>
+    <svg class="sh " viewBox="0 0 40 40" style="--x:92%;--y:70%;--s:44px;--d:17s;--dl:-3s;--c:var(--ac)"><path d="M20 4l16 16-16 16L4 20z"/></svg>
+    <svg class="sh twk" viewBox="0 0 40 40" style="--x:48%;--y:10%;--s:50px;--d:20s;--dl:-6s;--c:var(--ac2)"><circle cx="8" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="8" cy="20" r="2.2" fill="currentColor" stroke="none"/><circle cx="8" cy="32" r="2.2" fill="currentColor" stroke="none"/><circle cx="20" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="20" cy="20" r="2.2" fill="currentColor" stroke="none"/><circle cx="20" cy="32" r="2.2" fill="currentColor" stroke="none"/><circle cx="32" cy="8" r="2.2" fill="currentColor" stroke="none"/><circle cx="32" cy="20" r="2.2" fill="currentColor" stroke="none"/><circle cx="32" cy="32" r="2.2" fill="currentColor" stroke="none"/></svg>
+    <svg class="sh spin" viewBox="0 0 40 40" style="--x:30%;--y:80%;--s:36px;--d:15s;--dl:-9s;--c:var(--ac)"><rect x="6" y="6" width="28" height="28" rx="4"/></svg>
+    <svg class="sh " viewBox="0 0 40 40" style="--x:62%;--y:84%;--s:70px;--d:23s;--dl:-4s;--c:var(--ac2)"><path d="M3 24l7-10 7 10 7-10 7 10 6-10"/></svg>
+    <svg class="sh " viewBox="0 0 40 40" style="--x:4%;--y:36%;--s:58px;--d:18s;--dl:-7s;--c:var(--ac)"><path d="M4 30a16 16 0 0 1 32 0"/><path d="M12 30v-8M20 30V14M28 30v-8"/></svg>
+    <svg class="sh pls" viewBox="0 0 40 40" style="--x:82%;--y:32%;--s:34px;--d:13s;--dl:-2s;--c:var(--ac2)"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="5"/></svg>
+  </div>
+  <svg class="arc" viewBox="0 0 1440 220" preserveAspectRatio="none"><path class="flow" d="M0 210C300 40 520 40 720 120S1140 200 1440 30"/><path class="flow f2" d="M0 190C320 70 540 70 740 140S1120 190 1440 70"/></svg>
+</div>
+<header>
+  <div class="logo" onclick="go('home')" role="link" tabindex="0">
+    <svg width="30" height="22" viewBox="0 0 30 22" aria-hidden="true"><path d="M1 20V9C1 9 7 2 15 2s14 7 14 7v11" fill="none" stroke="#22d3ee" stroke-width="2.4"/><path d="M8 20v-9M15 20V4M22 20v-9" stroke="#6366f1" stroke-width="2"/></svg>BRIDGE
+  </div>
+  <nav id="nav"></nav>
+  <div class="tools2">
+    <button class="btn ghost sm" id="tourBtn" onclick="startTour()"></button>
+    <button class="btn ghost sm" id="accBtn" onclick="openAccount()"></button>
+    <button class="btn ghost sm" id="langBtn" onclick="toggleLang()"></button>
+    <button class="btn ghost sm" id="resetBtn" onclick="askReset()"></button>
+  </div>
+</header>
+<main id="app"></main>
+<dialog id="dlg"></dialog>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
